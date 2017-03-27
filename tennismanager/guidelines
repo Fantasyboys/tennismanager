@@ -1,0 +1,23 @@
+#########################################
+	Django Framework Python		#
+#########################################
+
+Documentation : https://docs.djangoproject.com/en/1.10/intro/tutorial01/
+
+- Creating project:
+
+ $ django-admin startproject mysite
+
+- Start local server:
+
+ $ python manage.py runserver
+
+ check URL: http://127.0.0.1:8000/
+
+- Creating Tennis app (app is a Bundle of Web Application):
+
+ $ python manage.py startapp tennis
+
+ - Added URLs file in tennis app and in tennis manager urls
+ 
+ - Creation DB MySQL and change DATABASES in tennismanager/setting.py 
