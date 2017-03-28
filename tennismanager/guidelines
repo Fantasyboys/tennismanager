@@ -1,5 +1,5 @@
 #########################################
-	Django Framework Python		#
+	Django Framework Python		        #
 #########################################
 
 Documentation : https://docs.djangoproject.com/en/1.10/intro/tutorial01/
@@ -18,6 +18,28 @@ Documentation : https://docs.djangoproject.com/en/1.10/intro/tutorial01/
 
  $ python manage.py startapp tennis
 
- - Added URLs file in tennis app and in tennis manager urls
+- Added URLs file in tennis app and in tennis manager urls
+
+- Creation DB MySQL and change DATABASES in tennismanager/setting.py
+
+- Migrations:
  
- - Creation DB MySQL and change DATABASES in tennismanager/setting.py 
+ $ python manage.py migrate
+ 
+- Creation of Model and generation of setter/getter methods
+
+- Add app(ex. tennis config) config in INSTALLED_APPS of settings.py of tennismanager 
+
+- Authomatic Generation of Migration (ex. app tennis):
+
+ $ python manage.py makemigrations tennis
+ 
+ - generated migrations are in /tennis/migrations (refresh Eclipse to find them)
+
+- Check SQL with:
+ 
+ $ python manage.py sqlmigrate tennis 0001
+
+- Migrate: 
+
+ $ python manage.py migrate

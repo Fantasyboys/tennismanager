@@ -2,4 +2,5 @@ from __future__ import unicode_literals
 
 from django.db import models
 
-# Create your models here.
+#import of subject entity in models - splitted file
+from tennis.submodels.subject import *
